@@ -44,17 +44,19 @@ Users can browse products, view details, manage favorites, and experience smooth
 
 ## 📁 Project Structure
 
+```text
 src/
 ├── components/
 │   └── ProductCard.jsx
 ├── features/
-│   ├── favorites/
-│   │   └── FavoritesPage.jsx
+│   └── favorites/
+│       └── FavoritesPage.jsx
 ├── store/
 │   └── index.js
 ├── tests/
 │   ├── ProductCard.test.jsx
 │   └── FavoritesPage.test.js
+```
 
 
 
