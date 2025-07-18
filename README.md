@@ -40,6 +40,9 @@ Users can browse products, view details, manage favorites, and experience smooth
 > All test suites are passing ✅  
 > More test cases will be added!
 
+<img width="1800" height="919" alt="Screenshot_20250717_092019" src="https://github.com/user-attachments/assets/474af93c-a21b-4f91-84c9-b0d210e7f4ed" />
+
+
 ---
 
 ## 📁 Project Structure
