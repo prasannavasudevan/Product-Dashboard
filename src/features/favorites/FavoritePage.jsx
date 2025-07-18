@@ -3,10 +3,9 @@ import { useSelector } from 'react-redux';
 import ProductCard from '../../components/ProductCard';
 
 const FavoritesPage = () => {
-  const favorites = useSelector(state => state.favorites.items); // ✅ items inside 'favorites'
-
+  const favorites = useSelector(state => state.favorites.items);
   if (!favorites.length) {
-    return <p className="text-center text-gray-500 mt-10">No favorites yet.</p>;
+    return <p className="text-center text-xl text-gray-700 mt-50">No favorites yet.</p>;
   }
 
   return (

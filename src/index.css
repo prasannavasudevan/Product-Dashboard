@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+
+*:not(input):not(textarea):not([contenteditable="true"]) {
+  caret-color: transparent;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+input,
+textarea,
+[contenteditable="true"] {
+  caret-color: auto !important;
+}

@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToFavorites, removeFromFavorites } from '../features/favorites/favoriteSlice';
 import { Link } from 'react-router-dom';
+import FavButton from './FavButton';
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
@@ -16,8 +16,8 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition-all duration-200">
-      <Link to={`/product/${product.id}`}>
+    <div className="relative bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition-all duration-200">
+      <Link to={`/product/${product.id}`} className="block">
         <img
           src={product.image}
           alt={product.title}
@@ -27,17 +27,11 @@ const ProductCard = ({ product }) => {
           <h2 className="text-md font-semibold truncate">{product.title}</h2>
           <p className="text-lg font-bold text-green-600 mt-1">${product.price}</p>
         </div>
+
+        <div className="absolute bottom-3 right-3">
+          <FavButton isFav={isFav} onToggle={handleFavorite} />
+        </div>
       </Link>
-      <div className="p-4 pt-0">
-        <button
-          onClick={handleFavorite}
-          className={`mt-2 px-4 py-1 text-sm rounded-full ${
-            isFav ? 'bg-red-100 text-red-500' : 'bg-gray-100 text-gray-600'
-          }`}
-        >
-          {isFav ? '❤️ Remove' : '🤍 Favorite'}
-        </button>
-      </div>
     </div>
   );
 };

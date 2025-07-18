@@ -9,7 +9,7 @@ const SearchBar = () => {
   useEffect(() => {
     const debounce = setTimeout(() => {
       dispatch(setSearchQuery(input));
-    }, 500); // 500ms debounce
+    }, 500);
 
     return () => clearTimeout(debounce);
   }, [input, dispatch]);
@@ -20,7 +20,7 @@ const SearchBar = () => {
       value={input}
       onChange={(e) => setInput(e.target.value)}
       placeholder="Search products..."
-      className="p-2 border rounded w-full max-w-md mb-4"
+      className="p-2 border rounded w-full max-w-md mb-4 cursor-text"
     />
   );
 };
