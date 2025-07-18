@@ -29,14 +29,18 @@ function renderWithFavorites(initialItems) {
   );
 }
 
-describe('ProductCard unit tests', () => {
-  test('shows "🤍 Favorite" when product is not in favorites', () => {
+describe('ProductCard icon-based favorite button', () => {
+  test('shows "Add to favorites" aria-label when not in favorites', () => {
     renderWithFavorites([]);
-    expect(screen.getByText('🤍 Favorite')).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: /add to favorites/i })
+    ).toBeInTheDocument();
   });
 
-  test('shows "❤️ Remove" when product is already in favorites', () => {
+  test('shows "Remove from favorites" aria-label when in favorites', () => {
     renderWithFavorites([sampleProduct]);
-    expect(screen.getByText('❤️ Remove')).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: /remove from favorites/i })
+    ).toBeInTheDocument();
   });
 });
