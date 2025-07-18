@@ -7,7 +7,7 @@ Users can browse products, view details, manage favorites, and experience smooth
 
 ## 🚀 Live Demo
 
-[🔗 Click here to check it out!](https://your-deployed-link.vercel.app)
+[🔗 Click here to check it out!](https://product-dashboard-gamma.vercel.app/)
 
 ---
 
