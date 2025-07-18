@@ -11,6 +11,21 @@ Users can browse products, view details, manage favorites, and experience smooth
 
 ---
 
+#ScreenShots
+
+*Home*
+<img width="1920" height="969" alt="Screenshot_20250718_084634" src="https://github.com/user-attachments/assets/2a96be9f-4777-4a15-953d-987a5b99de2f" />
+
+---
+
+*Favorite*
+<img width="1920" height="960" alt="Screenshot_20250718_084645" src="https://github.com/user-attachments/assets/2ea51c07-a8e8-4697-a1f2-f566d0f4abd3" />
+
+*Product Details*
+<img width="1920" height="964" alt="Screenshot_20250718_084707" src="https://github.com/user-attachments/assets/e12478f7-e349-438f-8417-f650dc522c56" />
+
+
+
 ## 🛠️ Features
 
 - 🧾 **Product Listing** from Fake Store API
@@ -36,6 +51,7 @@ Users can browse products, view details, manage favorites, and experience smooth
 
 - 🧩 `ProductCard.test.jsx` – tests display and interaction
 - 🌟 `FavoritesPage.test.js` – ensures favorites are rendered correctly
+- 🧩 `FavoriteSlice.test.jsx` – Tests favorite toggle logic and Redux state updates for add/remove.
 
 > All test suites are passing ✅  
 > More test cases will be added!
